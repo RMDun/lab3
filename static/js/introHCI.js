@@ -21,4 +21,8 @@ function projectClick(e) {
 	e.preventDefault();
 	$(this).css("background-color", "#7fff00");
 
+	// appending
+	var containingProject = $(this).closest(".project");
+	containingProject.append("<div class='project-description'><p>Description of the project.</p></div>");
+
 }
