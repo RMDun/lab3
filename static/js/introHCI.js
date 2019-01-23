@@ -11,11 +11,20 @@ $(document).ready(function() {
 function initializePage() {
 	$("#testjs").click(function(e) {
 		$('.jumbotron h1').text("Javascript is connected");
+
+		// css class
+		$(".jumbotron p").toggleClass("active");
+
+		$("#testjs").text("Sup I'm Ash from Deluxe City");
+
+	
 	});
 
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
 	$("a.thumbnail").click(projectClick);
+
+
 }
 
 function projectClick(e) {
